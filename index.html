@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 30%;
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            
+            
+            width:  400px;
+            height: 380px;
+        }
+
+        .product h3 {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .product p {
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+            color: #f3efef;
+            background-color: #333;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        nav li{
+        list-style-type: none;
+        margin-left: 20px;
+        }
+        nav h1{
+        font-size: 3em;
+        }
+        nav p, nav a{
+        color: #f9f8f8;
+        font-weight: 300;
+        }
+        .buy-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #45a049;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+  
+    <nav>
+        <div class="site-title">
+          <h1>NIKE </h1>
+          <p>An offical Nike Store</p>
+        </div>
+        <ul>
+          
+          <li><a href="/about.html">About US</a></li>
+          <li><a href="/buy.html"> Buy now</a></li>
+          <li><a href="/index.html">HOME</a></li>
+        </ul>
+      </nav>
+
+
+    <div class="scroll-container">
+        <div class="container">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Product 1">
+                <h3>Nike AF1</h3>
+                <p>Price: $50</p>
+                <p>Description: Highest quality official Nike AF1s</p>
+                <a href="buy.html" class="buy-button">Buy</a>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80" alt="Product 2">
+                <h3>Nike Cortex</h3>
+                <p>Price: $75</p>
+                <p>Description: Our most comfortable sneaker ever.</p>
+                <a href="buy" class="buy-button">Buy</a>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=465&q=80" alt="Product 3">
+                <h3>Nike Airmax</h3>
+                <p>Price: $65</p>
+                <p>Description: Comfy, classy, elegant.</p>
+                <a href="/buy" class="buy-button">Buy</a>
+            </div>
+           
+     
+            
+        </div>
+    </div>
+</body>
+<footer>
+    Copyright &copy; Shaff Suleiman 2023
+  </footer>
+</html>
